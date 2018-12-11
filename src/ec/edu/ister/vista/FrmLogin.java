@@ -41,8 +41,8 @@ public class FrmLogin extends javax.swing.JFrame {
         btnCargarMes = new javax.swing.JButton();
         btnCargarDias = new javax.swing.JButton();
         cbxDatos = new javax.swing.JComboBox<>();
-        jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
         jPanel3 = new javax.swing.JPanel();
         btnGenerarRandomicos = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -51,13 +51,12 @@ public class FrmLogin extends javax.swing.JFrame {
         btnMaximo = new javax.swing.JButton();
         btnPromedio = new javax.swing.JButton();
         btnMinimo = new javax.swing.JButton();
-        btnNuevoArreglo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("INSTITUTO SUPERIOR TECNOLÓGICO RUMIÑAHUI");
 
@@ -66,16 +65,15 @@ public class FrmLogin extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(173, 173, 173)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(396, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(56, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Arreglos meses y dias"));
@@ -98,14 +96,19 @@ public class FrmLogin extends javax.swing.JFrame {
 
         cbxDatos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Meses del año");
-
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Días de la semana");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setText("Meses del año");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
             }
         });
 
@@ -124,7 +127,7 @@ public class FrmLogin extends javax.swing.JFrame {
                         .addComponent(cbxDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jRadioButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -140,14 +143,14 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton1))
+                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Arreglos Randómicos"));
 
         btnGenerarRandomicos.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnGenerarRandomicos.setText("Generar Randomicos");
+        btnGenerarRandomicos.setText("GENERAR RANDOMICO");
         btnGenerarRandomicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGenerarRandomicosActionPerformed(evt);
@@ -157,7 +160,7 @@ public class FrmLogin extends javax.swing.JFrame {
         jScrollPane1.setViewportView(lstRandom);
 
         btnSuma.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnSuma.setText("Suma ");
+        btnSuma.setText("SUMA");
         btnSuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumaActionPerformed(evt);
@@ -165,7 +168,7 @@ public class FrmLogin extends javax.swing.JFrame {
         });
 
         btnMaximo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnMaximo.setText("Máximo");
+        btnMaximo.setText("MAXIMO");
         btnMaximo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMaximoActionPerformed(evt);
@@ -173,7 +176,7 @@ public class FrmLogin extends javax.swing.JFrame {
         });
 
         btnPromedio.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPromedio.setText("Promedio");
+        btnPromedio.setText("PROMEDIO");
         btnPromedio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPromedioActionPerformed(evt);
@@ -181,18 +184,10 @@ public class FrmLogin extends javax.swing.JFrame {
         });
 
         btnMinimo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnMinimo.setText("Mínimo");
+        btnMinimo.setText("MINIMO");
         btnMinimo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinimoActionPerformed(evt);
-            }
-        });
-
-        btnNuevoArreglo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnNuevoArreglo.setText("Nuevo");
-        btnNuevoArreglo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNuevoArregloActionPerformed(evt);
             }
         });
 
@@ -208,27 +203,23 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addComponent(btnMaximo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSuma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnGenerarRandomicos)
-                    .addComponent(btnNuevoArreglo))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(btnGenerarRandomicos)
+                .addGap(76, 76, 76)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap(33, Short.MAX_VALUE)
+                        .addGap(0, 12, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnSuma)
                             .addComponent(btnGenerarRandomicos))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnNuevoArreglo))
+                        .addComponent(btnMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnMinimo)
                         .addGap(16, 16, 16)
@@ -241,26 +232,27 @@ public class FrmLogin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(15, 15, 15)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -277,6 +269,8 @@ public class FrmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCargarDiasActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        cbxDatos.setModel(new javax.swing.DefaultComboBoxModel<>(Arreglos.mesesAnio()));
+        cbxDatos.setModel(new DefaultComboBoxModel<>(Arreglos.diasSemana()));
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
@@ -300,7 +294,7 @@ public class FrmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnMinimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimoActionPerformed
-        JOptionPane.showMessageDialog(null,"El maximo de los randomicos es: "+AgreloEnteros.min());
+        JOptionPane.showMessageDialog(null,"El minimo de los randomicos es: "+AgreloEnteros.min());
     }//GEN-LAST:event_btnMinimoActionPerformed
 
     private void btnMaximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMaximoActionPerformed
@@ -311,9 +305,10 @@ public class FrmLogin extends javax.swing.JFrame {
     JOptionPane.showMessageDialog(null,"El promedio de los randomicos es: "+AgreloEnteros.promedio());
     }//GEN-LAST:event_btnPromedioActionPerformed
 
-    private void btnNuevoArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoArregloActionPerformed
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+         cbxDatos.setModel(new javax.swing.DefaultComboBoxModel<>(Arreglos.mesesAnio()));
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnNuevoArregloActionPerformed
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCargarDias;
@@ -321,7 +316,6 @@ public class FrmLogin extends javax.swing.JFrame {
     private javax.swing.JButton btnGenerarRandomicos;
     private javax.swing.JButton btnMaximo;
     private javax.swing.JButton btnMinimo;
-    private javax.swing.JButton btnNuevoArreglo;
     private javax.swing.JButton btnPromedio;
     private javax.swing.JButton btnSuma;
     private javax.swing.ButtonGroup buttonGroup1;
